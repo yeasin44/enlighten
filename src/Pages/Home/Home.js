@@ -9,8 +9,8 @@ import tailwind from "../../assets/images/tailwind.png";
 
 const Home = () => {
   return (
-    <div className="mt-2 mb-4">
-      <Carousel fade className="rounded-1">
+    <div className="mt-2 mb-4 border overflow-hidden rounded-3">
+      <Carousel fade className="">
         <Carousel.Item>
           <img className="d-block w-100" src={html} alt="First slide" />
           <Carousel.Caption>
