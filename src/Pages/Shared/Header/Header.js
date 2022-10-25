@@ -33,6 +33,12 @@ const Header = () => {
                 Courses
               </Link>
               <Link
+                to="/faq"
+                className="text-decoration-none me-2 fw-bold text-white"
+              >
+                FAQ
+              </Link>
+              <Link
                 to="/blog"
                 className="text-decoration-none  fw-bold text-white"
               >
