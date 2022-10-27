@@ -1,15 +1,18 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+
 import LeftSide from "../Shared/LeftSide/LeftSide";
+import RightSide from "../Shared/RightSide/RightSide";
 
 const Courses = () => {
   return (
     <div>
-      <h3>Courses</h3>
       <Row>
-        <Col lg="9"></Col>
         <Col lg="3">
           <LeftSide></LeftSide>
+        </Col>
+        <Col lg="9">
+          <RightSide></RightSide>
         </Col>
       </Row>
     </div>

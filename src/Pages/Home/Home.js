@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import html from "../../assets/images/html.png";
 import css from "../../assets/images/css.jpg";
 import javascript from "../../assets/images/javascript.png";
-import react from "../../assets/images/react.jpg";
+import react from "../../assets/images/react.jpeg";
 import bootstrap from "../../assets/images/bootstrap.png";
 import tailwind from "../../assets/images/tailwind.png";
 

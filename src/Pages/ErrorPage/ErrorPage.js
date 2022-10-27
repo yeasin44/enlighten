@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
   return (
-    <section className="flex items-center h-screen p-16 bg-gray-100 text-gray-900">
-      <div className="container d-flex  align-items-center justify-center px-5 mx-auto my-8">
+    <section className="mt-5 d-flex h-screen p-16 bg-gray-100 text-gray-900">
+      <div className="mx-auto">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
-          className="text-danger"
-          style={{ width: "80px", height: "80px" }}
+          className="text-danger "
+          style={{ width: "300px", height: "300px" }}
         >
           <path
             fill="currentColor"
@@ -40,7 +40,7 @@ const ErrorPage = () => {
           </p>
           <Link
             to="/"
-            className="px-6 py-2 font-semibold rounded bg-red-600 text-white"
+            className="btn btn-danger px-6 py-2 font-semibold rounded bg-red-600 text-white"
           >
             Back to Homepage
           </Link>

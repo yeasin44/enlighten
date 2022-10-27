@@ -5,14 +5,15 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBZRclL3RWrLUUrhwG2gBD44SLYR3RJcGE",
-  authDomain: "assignment-10-b8475.firebaseapp.com",
-  projectId: "assignment-10-b8475",
-  storageBucket: "assignment-10-b8475.appspot.com",
-  messagingSenderId: "983849092274",
-  appId: "1:983849092274:web:5fd4fab4bdbaaaf9c335ab",
+  apiKey: "AIzaSyA-dzi8CXJIKZwCLA_lClAMZKcrDu4RHyQ",
+  authDomain: "enlighten-1fc74.firebaseapp.com",
+  projectId: "enlighten-1fc74",
+  storageBucket: "enlighten-1fc74.appspot.com",
+  messagingSenderId: "367396496808",
+  appId: "1:367396496808:web:d0c01325f5ae69d418699d",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
 export default app;
