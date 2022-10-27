@@ -52,15 +52,22 @@ const Blog = () => {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="3">
-          <Accordion.Header>Accordion Item #2</Accordion.Header>
+          <Accordion.Header>What is node? How does node work?</Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Node. js is a JavaScript runtime environment that achieves low
+            latency and high throughput by taking a “non-blocking” approach to
+            serving requests. In other words, Node. js wastes no time or
+            resources on waiting for I/O requests to return. In the traditional
+            approach to creating web servers, for each incoming request or
+            connection the server spawns a new thread of execution or even forks
+            a new process to handle the request and send a response.
+            Conceptually, this makes perfect sense, but in practice it incurs a
+            great deal of overhead. While spawning threads incurs less memory
+            and CPU overhead than forking processes, it can still be
+            inefficient. The presence of a large number of threads can cause a
+            heavily loaded system to spend precious cycles on thread scheduling
+            and context switching, which adds latency and imposes limits on
+            scalability and throughput.
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="4">
