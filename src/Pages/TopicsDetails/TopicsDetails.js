@@ -8,10 +8,10 @@ import "./TopicsDetails.css";
 const TopicsDetails = ({ topics }) => {
   const { image_url, title, details, price, _id } = topics;
   return (
-    <div className="">
-      <Card style={{ width: "18rem", height: "400px" }}>
+    <div className="details-card">
+      <Card style={{ width: "18rem", height: "400px" }} className="">
         <div
-          className="border rounded "
+          className="border rounded details-card"
           style={{ overflow: "hidden", width: "286px", height: "140px" }}
         >
           <Card.Img variant="top" src={image_url} style={{}} />

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
 import { Link, useLoaderData } from "react-router-dom";
 import ListGroup from "react-bootstrap/ListGroup";
+import "./LeftSide.css";
 
 const LeftSide = () => {
   const [categories, setCategories] = useState([]);
@@ -12,15 +13,17 @@ const LeftSide = () => {
       .then((data) => setCategories(data));
   }, []);
   return (
-    <div>
-      <div className="bg-dark mt-2 mb-2 rounded-2" style={{ height: "420px" }}>
+    <div className="left-container">
+      <div className="bg-dark mt-2 mb-2 rounded-2 left-container" style={{}}>
         <div className="">
-          <h5 className="text-white text-center">Courses</h5>
-          <div className="border w-75 mx-auto"></div>
+          <h5 className="text-white text-center left-title">Courses</h5>
+          <div className="border  mx-auto mb-2"></div>
           {categories.map((category) => (
             <ListGroup className="w-75 mx-auto">
-              <p></p>
-              <ListGroup.Item key={category.id} className="rounded ">
+              <ListGroup.Item
+                key={category.id}
+                className="rounded title-box mb-2"
+              >
                 <Link
                   className="text-decoration-none text-dark fw-semibold"
                   to={`/category/${category.id}`}

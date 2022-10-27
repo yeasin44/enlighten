@@ -2,6 +2,7 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 
 import TopicsDetails from "../../TopicsDetails/TopicsDetails";
+import "./RightSide.css";
 
 const RightSide = () => {
   const categoryTopics = useLoaderData();

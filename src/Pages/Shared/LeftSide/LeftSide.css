@@ -1,5 +1,18 @@
+.left-title {
+  position: relative;
+  top: 5px;
+}
+
 @media only screen and (max-width: 767px) {
-  .details-card {
+  .left-container {
+  }
+  .left-title {
+    font-size: 12px;
+  }
+  .title-box {
+    width: 75%px;
+
+    font-size: 12px;
   }
 }
 

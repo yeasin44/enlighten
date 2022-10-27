@@ -3,18 +3,16 @@ import { Col, Container, Row } from "react-bootstrap";
 
 import LeftSide from "../Shared/LeftSide/LeftSide";
 import RightSide from "../Shared/RightSide/RightSide";
+import "./Courses.css";
 
 const Courses = () => {
   return (
     <div>
-      <Row>
-        <Col lg="3">
-          <LeftSide></LeftSide>
-        </Col>
-        <Col lg="9">
-          <RightSide></RightSide>
-        </Col>
-      </Row>
+      <Container className="course-container">
+        <LeftSide></LeftSide>
+
+        <RightSide></RightSide>
+      </Container>
     </div>
   );
 };
