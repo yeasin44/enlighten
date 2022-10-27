@@ -24,15 +24,21 @@ const Blog = () => {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header>What is the use of firebase?</Accordion.Header>
+          <Accordion.Header>
+            What is the use of firebase? What other options there to implement
+            authentication?
+          </Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Similarly, Firebase is used for many purposes that can help your
+            apps to develop, grow and make it a quality app.Moreover, Firebase
+            is made with a developer in mind to solve all the issues they might
+            face when making an app. Firebase Authentication can help you to
+            implement the feature that a newbie can dream of, like doing
+            email/SMS verification, letting users sign in/sign up.It saves a ton
+            of time by providing a simple way to handle the sign-in/signup
+            process.The best part is that it builds trust and increases the
+            users’ base of your app that makes it more professional, better, and
+            faster.
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
