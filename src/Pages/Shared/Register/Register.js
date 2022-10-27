@@ -33,7 +33,7 @@ const Register = () => {
         handleUpdateUserProfile(name, photoURL);
         console.log(user);
         navigate(from, { replace: true });
-        toast.success("Register successfully");
+        toast.success("Register successfull");
       })
       .catch((error) => {
         console.error(error);

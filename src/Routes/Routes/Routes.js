@@ -38,32 +38,41 @@ export const routes = createBrowserRouter([
       {
         path: "/courses",
         element: <Courses></Courses>,
-        loader: () => fetch(`http://localhost:5000/topics/`),
+        loader: () =>
+          fetch(`https://assignment-10-server-tan-two.vercel.app/topics/`),
       },
       {
         path: "/category/:id",
         element: <RightSide></RightSide>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/category/${params.id}`),
+          fetch(
+            `https://assignment-10-server-tan-two.vercel.app/category/${params.id}`
+          ),
       },
       {
         path: "/category/:id",
         element: <CourseTopic></CourseTopic>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/category/${params.id}`),
+          fetch(
+            `https://assignment-10-server-tan-two.vercel.app/category/${params.id}`
+          ),
       },
       {
         path: "/category/:id",
         element: <RightSide></RightSide>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/topics/${params.id}`),
+          fetch(
+            `https://assignment-10-server-tan-two.vercel.app/topics/${params.id}`
+          ),
       },
 
       {
         path: "/topics/:id",
         element: <Topics></Topics>,
         loader: ({ params }) => {
-          return fetch(`http://localhost:5000/topics/${params.id}`);
+          return fetch(
+            `https://assignment-10-server-tan-two.vercel.app/topics/${params.id}`
+          );
         },
       },
       {

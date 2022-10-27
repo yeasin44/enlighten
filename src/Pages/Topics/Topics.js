@@ -21,16 +21,14 @@ const Topics = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
-  const from = location.state?.from?.pathname || "/";
-  const handleCheckOut = (e) => {
-    e.preventDefault();
-    if (user) {
-      setLoading(false);
-      navigate(from, { replace: true });
-    } else {
-      toast.error("Error");
-    }
-  };
+  const from = location.state?.from?.pathname || "/checkout";
+
+  if (user) {
+    navigate(from, { replace: true });
+  } else {
+    toast.error("Error");
+  }
+
   const topics = useLoaderData();
   const { image_url, title, details, price } = topics;
   return (
@@ -69,9 +67,7 @@ const Topics = () => {
 
           <Card.Text className="card-description">{details}</Card.Text>
           <Link to="/checkout">
-            <Button variant="primary" onSubmit={handleCheckOut}>
-              Get Premium
-            </Button>
+            <Button variant="primary">Get Premium</Button>
           </Link>
         </Card.Body>
       </Card>
