@@ -8,7 +8,6 @@ const Blog = () => {
       <div className="border w-25 mx-auto"></div>
       <div>
         <h3>1. What is Cors?</h3>
-        <p>Cross-origin resource sharing(CORS) is a mechanism </p>
       </div>
     </div>
   );
