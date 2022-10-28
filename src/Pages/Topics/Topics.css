@@ -1,7 +1,6 @@
 .topics-container {
   background-image: linear-gradient(#43cea2, #185a9d);
   margin-bottom: 20px;
-  height: 1000px;
 }
 .topics-img {
   margin-top: 5px;
@@ -10,7 +9,6 @@
 }
 .card-container {
   position: relative;
-  top: 10px;
 }
 .pdf {
   font-size: 10px;

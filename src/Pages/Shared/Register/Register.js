@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
-import { Col, Row } from "react-bootstrap";
+
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "./Register.css";
-import register from "../../../assets/images/register.jpg";
+
 import { AuthContext } from "../../../context/AuthProvider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
@@ -55,7 +55,7 @@ const Register = () => {
     setCheckBox(event.target.checked);
   };
   return (
-    <div className="border mt-2 mb-5 rounded-3 register-container">
+    <div className="border  mb-5 rounded-3 register-container mx-auto p-3">
       <div className="mt-5 mb-5">
         <div className="mt-3 register-form-container">
           <h3 className="text-white">Register</h3>

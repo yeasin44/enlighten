@@ -8,7 +8,7 @@ const Faq = () => {
     <Container className="faq-container">
       <div className=" accordian-height">
         <div className="blog-title">
-          <h4 className="text-center text-white mt-2">FAQ</h4>
+          <h4 className="text-center text-white">FAQ</h4>
         </div>
         <Accordion
           defaultActiveKey="0"

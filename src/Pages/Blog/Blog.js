@@ -6,9 +6,9 @@ import { Container } from "react-bootstrap";
 const Blog = () => {
   return (
     <Container>
-      <div className="blog-container accordian-height">
+      <div className="blog-container accordian-height p-5">
         <div className="blog-title">
-          <h4 className="text-center text-white  mt-2 ">Question & answer</h4>
+          <h4 className="text-center text-white   ">Question & answer</h4>
           <div className="border mt-4 mx-auto"></div>
         </div>
         <Accordion

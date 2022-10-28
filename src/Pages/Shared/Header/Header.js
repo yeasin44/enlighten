@@ -33,8 +33,8 @@ const Header = () => {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Link to="/" className="text-decoration-none">
-          <div className="d-flex justify-content-center align-items-center">
-            <img style={{ width: "50px" }} src={Logo} alt="" />
+          <div className="d-flex justify-content-center align-items-center header-logo">
+            <img src={Logo} alt="" />
             <h3 className="mt-2 ms-2 text-white">Enlighten</h3>
           </div>
         </Link>

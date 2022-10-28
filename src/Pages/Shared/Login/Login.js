@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
-import { Col, Row } from "react-bootstrap";
+
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "./Login.css";
-import logo from "../../../assets/images/login.png";
+
 import { AuthContext } from "../../../context/AuthProvider/AuthProvider";
 import { useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
@@ -69,7 +69,7 @@ const Login = () => {
   };
 
   return (
-    <div className="border mt-2 mb-5 rounded-3 login-container">
+    <div className="border mb-5 rounded-3 login-container mx-auto p-3">
       <div className="mt-5 mb-5 mx-auto">
         <div lg="" className="mt-3 form-container ">
           <h3 className="text-white">Login</h3>

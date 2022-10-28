@@ -14,7 +14,7 @@ const CheckOut = () => {
     <Container className="checkout-container">
       <div>
         <h3 className="mt-3">Check Out</h3>
-        <div className="border mt-4 w-50 "></div>
+        <div className="border mt-2 w-50 "></div>
         <h3 className="text-white">Login</h3>
         <Form className="checkout-form text-white">
           <Form.Group className="" controlId="formBasicEmail">

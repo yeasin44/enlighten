@@ -1,8 +1,14 @@
 .button-container Button {
   font-size: 5px;
 }
+.header-logo img {
+  width: 50px;
+}
 
 @media only screen and (max-width: 767px) {
+  .header-logo img {
+    width: 30px;
+  }
   .nav-menu-container {
     position: relative;
     margin-top: 20px;
