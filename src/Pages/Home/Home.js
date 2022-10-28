@@ -10,43 +10,43 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="border rounded-3 bg-dark">
+    <div className="border rounded-3 bg-dark home-container">
       <Carousel fade>
-        <Carousel.Item style={{}} className="home-container">
-          <img className="d-block w-100" src={html} alt="First slide" />
+        <Carousel.Item style={{}} className="home-container2">
+          <img className="d-block w-100 " src={html} alt="First slide" />
           <Carousel.Caption className=" mb-3 w-50 mx-auto" style={{}}>
             <h2>HTML & CSS Crash course</h2>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item style={{}} className=" home-container">
+        <Carousel.Item style={{}} className=" home-container2">
           <img className="d-block w-100" src={css} alt="Second slide" />
 
           <Carousel.Caption>
             <h2>JavaScript Crash course</h2>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item style={{}} className=" home-container">
+        <Carousel.Item style={{}} className=" home-container2">
           <img className="d-block w-100" src={javascript} alt="Third slide" />
 
           <Carousel.Caption>
             <h2>React Crash course</h2>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item style={{}} className=" home-container">
+        <Carousel.Item style={{}} className=" home-container2">
           <img className="d-block w-100" src={react} alt="Third slide" />
 
           <Carousel.Caption>
             <h2>UX/UI Design Crash course</h2>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item style={{}} className=" home-container">
+        <Carousel.Item style={{}} className=" home-container2">
           <img className="d-block w-100" src={bootstrap} alt="Third slide" />
 
           <Carousel.Caption>
             <h2>Bootstrap Crash course</h2>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item style={{}} className=" home-container">
+        <Carousel.Item style={{}} className=" home-container2">
           <img className="d-block w-100" src={tailwind} alt="Third slide" />
 
           <Carousel.Caption>

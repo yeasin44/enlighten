@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button, Image } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import { FaBookmark, FaEye, FaShareAlt, FaStar } from "react-icons/fa";
+
 import "./TopicsDetails.css";
 
 const TopicsDetails = ({ topics }) => {
-  const { image_url, title, details, price, _id } = topics;
+  const { image_url, title, details, _id } = topics;
   return (
-    <div className="details-card">
+    <div className="topics-details-card">
       <Card style={{ width: "18rem", height: "400px" }} className="">
         <div
           className="border rounded details-card"

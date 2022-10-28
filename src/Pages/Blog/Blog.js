@@ -6,12 +6,15 @@ import { Container } from "react-bootstrap";
 const Blog = () => {
   return (
     <Container>
-      <div style={{ height: "720px" }} className="blog-container">
+      <div className="blog-container accordian-height">
         <div className="blog-title">
           <h4 className="text-center text-danger mt-2">Question & answer</h4>
           <div className="border mt-4 mx-auto"></div>
         </div>
-        <Accordion defaultActiveKey="0" className="w-50 mx-auto mt-5">
+        <Accordion
+          defaultActiveKey="0"
+          className=" mx-auto mt-5 accordian-container"
+        >
           <Accordion.Item eventKey="0">
             <Accordion.Header>1. What is Cors?</Accordion.Header>
             <Accordion.Body>

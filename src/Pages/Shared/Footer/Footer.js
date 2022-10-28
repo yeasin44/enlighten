@@ -1,20 +1,20 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Logo from "../../../assets/logo/logo.png";
-import payWith from "../../../assets/images/paywith.jpg";
+import "./Footer.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-dark">
+    <div className="bg-dark footer-container">
       <Container>
         <div>
-          <div className="d-flex align-items-center mt-5 py-5">
-            <img style={{ width: "50px" }} src={Logo} alt="" />
+          <div className="d-flex align-items-center  footer-img">
+            <img className="" src={Logo} alt="" />
             <h3 className="mt-2 ms-2 text-white">Enlighten</h3>
           </div>
         </div>
-        <div className="text-center mt-4">
+        <div className="text-center footer-menu">
           <Link
             to="/"
             className="d-block text-decoration-none  fw-bold text-white"
@@ -38,7 +38,7 @@ const Footer = () => {
             Privacy policy
           </Link>
         </div>
-        <p className="text-light text-center mt-5 fw-semibold">
+        <p className="text-light text-center fw-semibold footer-copyright">
           Copyright &copy; 2022 Enlighten.com
         </p>
       </Container>

@@ -18,16 +18,16 @@ import { AuthContext } from "../../context/AuthProvider/AuthProvider";
 
 const Topics = () => {
   const { user, login, setLoading } = useContext(AuthContext);
-  const [error, setError] = useState("");
-  const navigate = useNavigate();
-  const location = useLocation();
-  const from = location.state?.from?.pathname || "/checkout";
+  // const [error, setError] = useState("");
+  // const navigate = useNavigate();
+  // const location = useLocation();
+  // const from = location.state?.from?.pathname || "/checkout";
 
-  if (user) {
-    navigate(from, { replace: true });
-  } else {
-    toast.error("Error");
-  }
+  // if (user) {
+  //   navigate(from, { replace: true });
+  // } else {
+  //   toast.error("Error");
+  // }
 
   const topics = useLoaderData();
   const { image_url, title, details, price } = topics;

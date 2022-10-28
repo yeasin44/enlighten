@@ -41,6 +41,7 @@ const Login = () => {
       .catch((error) => {
         console.error(error);
         setError(error.message);
+        toast.error(error.message.slice(22, -2));
       })
       .finally(() => {
         setLoading(false);
@@ -52,7 +53,7 @@ const Login = () => {
         const user = result.user;
         console.log(user);
         navigate(from, { replace: true });
-        toast.success("Login successfully");
+        toast.success("Login successfull");
       })
       .catch((error) => console.error(error));
   };
@@ -62,7 +63,7 @@ const Login = () => {
         const user = result.user;
         console.log(user);
         navigate(from, { replace: true });
-        toast.success("Login successfully");
+        toast.success("Login successfull");
       })
       .catch((error) => console.error(error));
   };

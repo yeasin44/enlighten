@@ -1,6 +1,5 @@
-.home-container::before {
+.home-container2::before {
   content: "";
-
   position: absolute;
   top: 0;
   right: 0;
@@ -9,14 +8,24 @@
   background: #000;
   opacity: 0.6;
 }
-.home-container h2 {
-  margin-bottom: 300px;
+.home-container2 img {
+  height: 500px;
+}
+.home-container {
+}
+.home-container2 h2 {
+  color: #000;
+  margin-bottom: 100px;
+  background-color: antiquewhite;
+  padding: 10px;
+
+  border-radius: 40px 5px;
 }
 @media only screen and (max-width: 767px) {
-  .home-container img {
+  .home-container2 img {
     height: 200px;
   }
-  .home-container h2 {
+  .home-container2 h2 {
     font-size: 20px;
     margin-bottom: 50px;
   }

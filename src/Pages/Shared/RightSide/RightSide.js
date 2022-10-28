@@ -8,7 +8,7 @@ const RightSide = () => {
   const categoryTopics = useLoaderData();
 
   return (
-    <div className="details-container mt-2 mb-5">
+    <div className="details-container mt-2 right side-container">
       {categoryTopics?.map((topics) => (
         <TopicsDetails key={topics._id} topics={topics}></TopicsDetails>
       ))}

@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../layouts/Main";
 import Blog from "../../Pages/Blog/Blog";
-import Category from "../../Pages/Category/Category";
 import CheckOut from "../../Pages/ChekcOut/CheckOut";
 import Courses from "../../Pages/Courses/Courses";
 import CourseTopic from "../../Pages/CourseTopic/CourseTopic";
@@ -9,7 +8,6 @@ import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import Faq from "../../Pages/Faq/Faq";
 import Home from "../../Pages/Home/Home";
 import Profile from "../../Pages/Profile/Profile";
-import LeftSide from "../../Pages/Shared/LeftSide/LeftSide";
 import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
 import RightSide from "../../Pages/Shared/RightSide/RightSide";
