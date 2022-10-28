@@ -10,7 +10,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="border rounded-3 bg-dark home-container">
+    <div className="border rounded-3 bg-dark home-container home-main">
       <Carousel fade>
         <Carousel.Item style={{}} className="home-container2">
           <img className="d-block w-100 " src={html} alt="First slide" />

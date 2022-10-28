@@ -11,7 +11,8 @@
 .home-container2 img {
   height: 500px;
 }
-.home-container {
+.home-main {
+  height: 100vh;
 }
 .home-container2 h2 {
   margin-bottom: 80px;
