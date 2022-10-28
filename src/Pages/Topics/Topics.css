@@ -1,6 +1,12 @@
 .topics-container {
   background-image: linear-gradient(#43cea2, #185a9d);
+  margin-bottom: 20px;
   height: 1000px;
+}
+.topics-img {
+  margin-top: 5px;
+  border-radius: 20px;
+  width: 600px;
 }
 .card-container {
   position: relative;
@@ -22,6 +28,11 @@
   .pdf-icon {
     margin-top: -20px;
   }
+  .topics-img {
+    margin-top: 5px;
+    border-radius: 20px;
+    width: 200px;
+  }
 }
 
 /* ........................................................................ */
@@ -35,5 +46,10 @@
   }
   .pdf-icon {
     margin-top: -20px;
+  }
+  .topics-img {
+    margin-top: 5px;
+    border-radius: 20px;
+    width: 400px;
   }
 }

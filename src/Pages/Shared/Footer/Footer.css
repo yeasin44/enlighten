@@ -3,8 +3,7 @@
   margin-top: 10px;
 }
 .footer-container {
-  position: absolute;
-  width: 100%;
+  margin: auto;
 }
 @media only screen and (max-width: 767px) {
   .footer-img img {

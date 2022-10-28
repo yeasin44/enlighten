@@ -1,3 +1,67 @@
 .button-container Button {
   font-size: 5px;
 }
+
+@media only screen and (max-width: 767px) {
+  .nav-menu-container {
+    position: relative;
+    margin-top: 20px;
+    left: -40px;
+  }
+  .nav-menu {
+    display: block;
+  }
+  .dp-container {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  }
+  .btn-logout {
+    position: absolute;
+    top: 140px;
+    right: 10px;
+  }
+  .btn-login {
+    position: absolute;
+    top: 140px;
+    right: 20px;
+  }
+  .btn-register {
+    position: absolute;
+    top: 140px;
+    right: 80px;
+  }
+}
+
+/* ........................................................................ */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav-menu-container {
+    position: relative;
+    margin-top: 20px;
+    left: -40px;
+  }
+  .nav-menu {
+    display: block;
+  }
+  .dp-container {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+  }
+  .btn-logout {
+    position: absolute;
+    top: 140px;
+    right: 20px;
+  }
+  .btn-login {
+    position: absolute;
+    top: 140px;
+    right: 20px;
+  }
+  .btn-register {
+    position: absolute;
+    top: 140px;
+    right: 80px;
+  }
+}

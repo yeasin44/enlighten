@@ -1,6 +1,7 @@
 .blog-container {
   background-image: linear-gradient(#43cea2, #185a9d);
   margin-top: -10px;
+  margin-bottom: 50px;
 }
 .accordian-height {
 }

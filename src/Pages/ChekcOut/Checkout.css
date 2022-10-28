@@ -1,0 +1,19 @@
+.checkout-container {
+  margin-bottom: 40px;
+
+  padding: 10px;
+}
+.checkout-form {
+  width: 500px;
+}
+
+@media only screen and (max-width: 767px) {
+  .checkout-form {
+    width: 350px;
+  }
+}
+
+/* ........................................................................ */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}

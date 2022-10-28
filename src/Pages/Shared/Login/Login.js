@@ -70,54 +70,50 @@ const Login = () => {
 
   return (
     <div className="border mt-2 mb-5 rounded-3 login-container">
-      <div className="mt-5 mb-5">
-        <Row>
-          <Col lg="6">
-            <img src={logo} alt="" className="w-75 ms-5" />
-          </Col>
-          <Col lg="6" className="mt-3">
-            <h3 className="text-white">Login</h3>
-            <Form onSubmit={handleLogin} className="w-75 text-white">
-              <Form.Group className="mb-3 " controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control
-                  name="email"
-                  type="email"
-                  placeholder="Enter email"
-                  required
-                />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control
-                  name="password"
-                  type="password"
-                  placeholder="Password"
-                  required
-                />
-              </Form.Group>
-              <p>{error}</p>
-              <Button variant="primary w-100" type="submit">
-                Login
-              </Button>
-              <div className="border mt-4  mx-auto"></div>
-            </Form>
-            <div className="mt-4">
-              <Button
-                onClick={handleGoogleLogin}
-                variant="light fw-semibold me-5 md:d-block"
-              >
-                <FaGoogle /> Login with Google
-              </Button>
-              <Button
-                onClick={handleGithubLogin}
-                variant="dark fw-semibold text-white"
-              >
-                <FaGithub /> Login with Github
-              </Button>
-            </div>
-          </Col>
-        </Row>
+      <div className="mt-5 mb-5 mx-auto">
+        <div lg="" className="mt-3 form-container ">
+          <h3 className="text-white">Login</h3>
+          <Form onSubmit={handleLogin} className=" text-white form-width">
+            <Form.Group className="mb-3 " controlId="formBasicEmail">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                name="email"
+                type="email"
+                placeholder="Enter email"
+                required
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                name="password"
+                type="password"
+                placeholder="Password"
+                required
+              />
+            </Form.Group>
+            <p>{error}</p>
+            <Button variant="primary w-100" type="submit">
+              Login
+            </Button>
+            <div className="border mt-4  mx-auto"></div>
+          </Form>
+          <div className="mt-4">
+            <Button
+              onClick={handleGoogleLogin}
+              variant="light fw-semibold me-5 md:d-block"
+              className="btn-google"
+            >
+              <FaGoogle /> Login with Google
+            </Button>
+            <Button
+              onClick={handleGithubLogin}
+              variant="dark fw-semibold text-white"
+            >
+              <FaGithub /> Login with Github
+            </Button>
+          </div>
+        </div>
       </div>
     </div>
   );

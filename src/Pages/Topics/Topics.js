@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import toast from "react-hot-toast";
+
 import { FaRegFilePdf } from "react-icons/fa";
-import Image from "react-bootstrap/Image";
+
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import "./Topics.css";
@@ -17,18 +17,6 @@ import {
 import { AuthContext } from "../../context/AuthProvider/AuthProvider";
 
 const Topics = () => {
-  const { user, login, setLoading } = useContext(AuthContext);
-  // const [error, setError] = useState("");
-  // const navigate = useNavigate();
-  // const location = useLocation();
-  // const from = location.state?.from?.pathname || "/checkout";
-
-  // if (user) {
-  //   navigate(from, { replace: true });
-  // } else {
-  //   toast.error("Error");
-  // }
-
   const topics = useLoaderData();
   const { image_url, title, details, price } = topics;
   return (
@@ -60,7 +48,9 @@ const Topics = () => {
             </>
           </div>
         </Card.Header>
-        <Card.Img variant="top" src={image_url} />
+        <div className="mx-auto topics-img">
+          <Card.Img variant="top" src={image_url} />
+        </div>
 
         <Card.Body>
           <Card.Text className="fw-bold  text-danger">Price:{price}</Card.Text>

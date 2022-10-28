@@ -41,41 +41,42 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <div className="text-decoration-none ms-5">
+            <div className="text-decoration-none ms-5 nav-menu-container">
               <Link
                 to="/"
-                className="text-decoration-none me-2 fw-bold text-white"
+                className="text-decoration-none me-2 fw-bold text-white nav-menu"
               >
                 Home
               </Link>
               <Link
                 to="/courses"
-                className="text-decoration-none me-2 fw-bold text-white"
+                className="text-decoration-none me-2 fw-bold text-white nav-menu"
               >
                 Courses
               </Link>
               <Link
                 to="/faq"
-                className="text-decoration-none me-2 fw-bold text-white"
+                className="text-decoration-none me-2 fw-bold text-white nav-menu"
               >
                 FAQ
               </Link>
               <Link
                 to="/blog"
-                className="text-decoration-none  fw-bold text-white"
+                className="text-decoration-none  fw-bold text-white nav-menu"
               >
                 Blog
               </Link>
             </div>
           </Nav>
           <Nav>
-            <div className="button-container mt-3">
+            <div className="button-container mt-4">
               {user?.uid ? (
                 <>
                   <Button
                     variant="light ms-4 me-2 text-decoration-none fw-bold"
                     onClick={handleLogOut}
                     style={{ fontSize: "12px" }}
+                    className="btn-logout"
                   >
                     Log out
                   </Button>
@@ -83,14 +84,14 @@ const Header = () => {
               ) : (
                 <>
                   <Link
-                    className="btn btn-light me-1 fw-bold"
+                    className="btn btn-light me-1 fw-bold btn-register"
                     to="/register"
                     style={{ fontSize: "12px" }}
                   >
                     Register
                   </Link>
                   <Link
-                    className="btn btn-primary fw-bold"
+                    className="btn btn-primary fw-bold btn-login"
                     to="/login"
                     style={{ fontSize: "12px" }}
                   >
@@ -100,13 +101,13 @@ const Header = () => {
               )}
             </div>
 
-            <Link className="mt-2">
+            <Link className="mt-2 dp-container">
               <>
                 {user?.photoURL ? (
                   <div ref={ref}>
                     <Image
-                      className="mt-2"
-                      style={{ width: "30px" }}
+                      className="mt-2 dp"
+                      style={{ width: "40px" }}
                       roundedCircle
                       src={user?.photoURL}
                       onClick={handleClick}

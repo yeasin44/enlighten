@@ -5,8 +5,8 @@ import "./Faq.css";
 
 const Faq = () => {
   return (
-    <Container>
-      <div className="faq-container accordian-height">
+    <Container className="faq-container">
+      <div className=" accordian-height">
         <div className="blog-title">
           <h4 className="text-center text-white mt-2">FAQ</h4>
         </div>

@@ -8,14 +8,15 @@ import Bkash from "../../assets/images/bkash.png";
 import paypel from "../../assets/images/paypel.png";
 import pioner from "../../assets/images/pioner.png";
 import { Container } from "react-bootstrap";
+import "./Checkout.css";
 const CheckOut = () => {
   return (
-    <Container>
+    <Container className="checkout-container">
       <div>
         <h3 className="mt-3">Check Out</h3>
         <div className="border mt-4 w-50 "></div>
         <h3 className="text-white">Login</h3>
-        <Form className="w-50 text-white">
+        <Form className="checkout-form text-white">
           <Form.Group className="" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control

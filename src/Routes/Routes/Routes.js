@@ -8,6 +8,7 @@ import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import Faq from "../../Pages/Faq/Faq";
 import Home from "../../Pages/Home/Home";
 import Profile from "../../Pages/Profile/Profile";
+import LeftSide from "../../Pages/Shared/LeftSide/LeftSide";
 import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
 import RightSide from "../../Pages/Shared/RightSide/RightSide";
@@ -42,6 +43,14 @@ export const routes = createBrowserRouter([
       {
         path: "/category/:id",
         element: <RightSide></RightSide>,
+        loader: ({ params }) =>
+          fetch(
+            `https://assignment-10-server-tan-two.vercel.app/category/${params.id}`
+          ),
+      },
+      {
+        path: "/category/:id",
+        element: <LeftSide></LeftSide>,
         loader: ({ params }) =>
           fetch(
             `https://assignment-10-server-tan-two.vercel.app/category/${params.id}`

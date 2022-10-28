@@ -8,7 +8,7 @@ const Blog = () => {
     <Container>
       <div className="blog-container accordian-height">
         <div className="blog-title">
-          <h4 className="text-center text-danger mt-2">Question & answer</h4>
+          <h4 className="text-center text-white  mt-2 ">Question & answer</h4>
           <div className="border mt-4 mx-auto"></div>
         </div>
         <Accordion

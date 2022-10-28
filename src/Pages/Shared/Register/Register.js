@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "./Register.css";
-import register from "../../../assets/images/register.png";
+import register from "../../../assets/images/register.jpg";
 import { AuthContext } from "../../../context/AuthProvider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
@@ -57,63 +57,61 @@ const Register = () => {
   return (
     <div className="border mt-2 mb-5 rounded-3 register-container">
       <div className="mt-5 mb-5">
-        <Row>
-          <Col lg="6">
-            <img src={register} alt="" className="w-50 ms-5" />
-          </Col>
-          <Col lg="6" className="mt-3">
-            <h3 className="text-white">Register</h3>
-            <Form onSubmit={handleRegister} className="w-75 text-white">
-              <Form.Group className="mb-3 " controlId="formBasicFullName">
-                <Form.Label>Full name</Form.Label>
-                <Form.Control name="name" type="text" placeholder="Full name" />
-              </Form.Group>
-              <Form.Group className="mb-3 " controlId="formBasicPhotoURL">
-                <Form.Label>Photo URL</Form.Label>
-                <Form.Control
-                  name="photoURL"
-                  type="text"
-                  placeholder="Photo URL"
-                />
-              </Form.Group>
-              <Form.Group className="mb-3 " controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control
-                  name="email"
-                  type="email"
-                  placeholder="Enter email"
-                />
-              </Form.Group>
+        <div className="mt-3 register-form-container">
+          <h3 className="text-white">Register</h3>
+          <Form
+            onSubmit={handleRegister}
+            className=" text-white register-form-width"
+          >
+            <Form.Group className="mb-3 " controlId="formBasicFullName">
+              <Form.Label>Full name</Form.Label>
+              <Form.Control name="name" type="text" placeholder="Full name" />
+            </Form.Group>
+            <Form.Group className="mb-3 " controlId="formBasicPhotoURL">
+              <Form.Label>Photo URL</Form.Label>
+              <Form.Control
+                name="photoURL"
+                type="text"
+                placeholder="Photo URL"
+              />
+            </Form.Group>
+            <Form.Group className="mb-3 " controlId="formBasicEmail">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                name="email"
+                type="email"
+                placeholder="Enter email"
+              />
+            </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control
-                  name="password"
-                  type="password"
-                  placeholder="Password"
-                />
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                <Form.Check
-                  type="checkbox"
-                  onClick={handleCheckBox}
-                  label={
-                    <>
-                      Accept{" "}
-                      <Link to="/terms" className="text-warning">
-                        Terms and conditions
-                      </Link>
-                    </>
-                  }
-                />
-              </Form.Group>
-              <p className="text-red">{error}</p>
-              <Button variant="danger w-100" type="submit" disabled={!checkBox}>
-                Register
-              </Button>
-            </Form>
-          </Col>
-        </Row>
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                name="password"
+                type="password"
+                placeholder="Password"
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicCheckbox">
+              <Form.Check
+                type="checkbox"
+                onClick={handleCheckBox}
+                label={
+                  <>
+                    Accept{" "}
+                    <Link to="/terms" className="text-warning">
+                      Terms and conditions
+                    </Link>
+                  </>
+                }
+              />
+            </Form.Group>
+            <p className="text-red">{error}</p>
+            <Button variant="danger w-100" type="submit" disabled={!checkBox}>
+              Register
+            </Button>
+          </Form>
+        </div>
       </div>
     </div>
   );
